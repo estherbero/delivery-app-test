@@ -89,7 +89,7 @@ describe('Dashboard workflow Functional tests', () => {
     it('should request the delivery', async () => {
       await dashboardPage.requestDelivery();
       const pageTitle = 'Ongoing | Stuart';
-      const seconds = 3;
+      const seconds = 5;
       await dashboardPage.waitForPageToLoad(pageTitle, seconds);
 
       const actualPickUpInfo = await dashboardPage.getDeliveryInfo('pickUp');
